@@ -1,0 +1,58 @@
+
+/*
+"Vivid Tangerine": #ffa69e
+"Salmon": #ff7e6b
+"Rose Taupe": #8c5e58
+*/
+body {
+	background-color: #ffa69e;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	color: #ff7e6b;
+	margin: 10px 0px 10px 0px;
+}
+
+#footer-nav {
+	background-color: #8c5e58;
+	padding: 0px;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+#logo-id {
+	background-image: url("../image/lobster.png");
+	width: 64px;
+	height: 64px;
+
+}
+
+
+#menu {
+   background-image: url("../image/menu.png");
+   background-repeat: no-repeat;
+   width: 30px;
+   height: 24px;
+   margin: 10px 0px 1px 20px;
+}
+
+#about {
+   background-image: url("../image/info.png");
+   background-repeat: no-repeat;
+   width: 24px;
+   height: 24px;
+   margin: 10px 0px 1px 20px;
+
+}
+
+#contact {
+   background-image: url("../image/contact.png");
+   background-repeat: no-repeat;
+   width: 24px;
+   height: 24px;
+   margin: 10px 0px -1px 32px;
+}
