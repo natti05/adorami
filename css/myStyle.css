@@ -28,7 +28,6 @@ h1 {
 	background-image: url("../image/lobster.png");
 	width: 64px;
 	height: 64px;
-
 }
 
 
@@ -56,3 +55,46 @@ h1 {
    height: 24px;
    margin: 10px 0px -1px 32px;
 }
+
+
+@media (max-width: 575.98px) {
+
+	#logo-id {
+		background-image: url("../image/lobster_small.png");
+		background-repeat: no-repeat;
+		width: 48px;
+        height: 48px;
+		
+     }
+
+	a.nav-link{
+		font-size: .8em;
+	}
+
+	#menu {
+        background-image: none;
+        margin: 0px;
+        height: 0px;
+    }
+
+    #about {
+        background-image: none;
+        margin: 0px;
+        height: 0px;
+    }
+
+    #contact {
+        background-image: none;
+        margin: 0px;
+        height: 0px;
+    }
+
+    #text-right { 
+       text-align: right;
+}
+}
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 991.98px) { ... }
+
+@media (max-width: 1199.98px) { ... }
