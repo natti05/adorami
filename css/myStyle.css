@@ -28,7 +28,6 @@ h1 {
 	height: 64px;
 }
 
-
 div #menu {
    background-image: url("../image/menu.png");
    background-repeat: no-repeat;
@@ -58,11 +57,10 @@ div #contact {
 }
 
 #text-right { 
-    ext-align: right;
+    text-align: right;
 }
-/*Header ends*/
 
-/*body*/
+/*main*/
 .img-fluid {
    width: 100%;
    height: 370px;
@@ -89,7 +87,7 @@ div #contact {
 #tile-menu , #tile-specials, #tile-map {
   position: relative;
   width: 100%;
-  height: 360px;
+  height: 330px;
   margin-bottom: 15px;
 }
 
@@ -108,29 +106,62 @@ div #contact {
   color: white;
   font-size: 2em;
   text-transform: uppercase;
-  clear: right;
+  
 }
 
-/*body end*/
 /* footer started*/
-#footer-nav {
+.panel-footer {
 	background-color: #8c5e58;
-	padding: 0px;
+	color: white;
+   margin-top: 30px;
+   padding-top: 30px;
 }
 
-.navbar-brand {
-	color: white;
+section > span {
+   font-size: 1.8em;
 }
+
+section > p {
+  font-style: italic;
+}
+
+section {
+   margin-bottom: 50px;
+}
+
+#location > p {
+   margin-top: 10px;
+   color: black;
+}
+
+.panel-footer section hr {
+   margin: auto;
+   margin-top: 20px;
+   width: 50%;
+}
+
+.call {
+   text-decoration: none;
+   color: white;
+   font-size: 1.8em;
+}
+
+.call:hover {
+   color: black;
+}
+
 /* footer ends*/
 
   
   
+/********** Large devices only **********/
 @media (min-width: 1400px){ 
    .container {
-     max-width: 1223px;
+      max-width: 1223px;
    }
+
 }
-/********** Large devices only **********/
+
 @media (min-width: 1200px) {
     .container .jumbotron {
       background-image: url("../image/restaurant_b.jpg");
@@ -139,6 +170,10 @@ div #contact {
       width: 100%;
       height: 700px;
     }
+   .bg-light {
+      height: 160px;
+   }
+
 }
 
 /********** Medium devices only **********/
@@ -150,6 +185,11 @@ div #contact {
       background-position: center;
       height: 558px;
    }
+
+   .bg-light {
+      height: 160px;
+   }
+
 }
 
 /********** Small devices only **********/
@@ -165,7 +205,7 @@ div #contact {
 
    .container {
       max-width: 100%;
-    }
+   }
 }
 
 /********** Extra small devices only **********/
@@ -183,9 +223,7 @@ div #contact {
       height: 48px;
 		
    }
-    
-/*Header ends*/
-/*body*/
+/*main*/
    .jumbotron {
 	   background-image: url("../image/restaurant_s.jpg");
 	   background-repeat: no-repeat;
@@ -198,7 +236,14 @@ div #contact {
       max-width: 100%;
    }
 
-/*bodyend*/
+/*Footer*/
+   section {
+      text-align: center;
+   }
+
+   #id_contact {
+      margin-top: 30px;
+   }
 }
 
 @media (max-width: 575px) {
@@ -214,12 +259,21 @@ div #contact {
 	}
 
     
-/*Header ends*/
+/*main*/
     
    #tile-menu , #tile-specials, #tile-map, #map {
       width: 100%;
       height: 180px;
       margin-bottom: 15px;
+   }
+
+   /*Footer*/
+   section {
+      text-align: center;
+   }
+
+   #id_contact {
+      margin-top: 30px;
    }
 
 }
