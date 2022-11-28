@@ -4,9 +4,14 @@
 "Salmon": #ff7e6b
 "Rose Taupe": #8c5e58
 */
+
+*{
+	border-box: box-sizing;
+}
 body {
 	background-color: #ffa69e;
 	font-family: 'Open Sans', sans-serif;
+	
 }
 
 h1 {
@@ -15,6 +20,99 @@ h1 {
 	margin: 10px 0px 10px 0px;
 }
 
+
+/*Header*/
+#logo-id {
+	background-image: url("../image/lobster.png");
+	width: 64px;
+	height: 64px;
+}
+
+
+div #menu {
+   background-image: url("../image/menu.png");
+   background-repeat: no-repeat;
+   width: 30px;
+   height: 24px;
+   margin: 10px 10px 1px 20px;
+   float: right;
+}
+
+div #about {
+   background-image: url("../image/info.png");
+   background-repeat: no-repeat;
+   width: 24px;
+   height: 24px;
+   margin: 10px 10px 1px 20px;
+   float: right;
+
+}
+
+div #contact {
+   background-image: url("../image/contact.png");
+   background-repeat: no-repeat;
+   width: 24px;
+   height: 24px;
+   margin: 10px 10px 1px 32px;
+   float: right;
+}
+
+#text-right { 
+    ext-align: right;
+}
+/*Header ends*/
+
+/*body*/
+.img-fluid {
+   width: 100%;
+   height: 370px;
+} 
+
+.container .jumbotron {
+   margin-bottom: 15px; 
+
+
+}
+
+#tile-menu {
+  background: url("../image/ebibowl.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tile-specials {
+  background: url("../image/salmon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tile-menu , #tile-specials, #tile-map {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin-bottom: 15px;
+}
+
+#tile-menu:hover , #tile-specials:hover, #tile-map:hover {
+  box-shadow: 0 5px 10px 5px #ffff;
+  
+}
+
+#tile-menu span, #tile-specials span, #tile-map span {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  clear: right;
+}
+
+/*body end*/
+/* footer started*/
 #footer-nav {
 	background-color: #8c5e58;
 	padding: 0px;
@@ -23,78 +121,105 @@ h1 {
 .navbar-brand {
 	color: white;
 }
+/* footer ends*/
 
-#logo-id {
-	background-image: url("../image/lobster.png");
-	width: 64px;
-	height: 64px;
+  
+  
+@media (min-width: 1400px){ 
+   .container {
+     max-width: 1223px;
+   }
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .container .jumbotron {
+      background-image: url("../image/restaurant_b.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 700px;
+    }
 }
 
-
-#menu {
-   background-image: url("../image/menu.png");
-   background-repeat: no-repeat;
-   width: 30px;
-   height: 24px;
-   margin: 10px 0px 1px 20px;
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+   .container .jumbotron {
+      background-image: url("../image/restaurant_m.jpg");
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: center;
+      height: 558px;
+   }
 }
 
-#about {
-   background-image: url("../image/info.png");
-   background-repeat: no-repeat;
-   width: 24px;
-   height: 24px;
-   margin: 10px 0px 1px 20px;
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
 
+   .jumbotron {
+      background-image: url("../image/restaurant_m.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 558px;
+    }
+
+   .container {
+      max-width: 100%;
+    }
 }
 
-#contact {
-   background-image: url("../image/contact.png");
-   background-repeat: no-repeat;
-   width: 24px;
-   height: 24px;
-   margin: 10px 0px -1px 32px;
-}
+/********** Extra small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
 
 
-@media (max-width: 575.98px) {
-
-	#logo-id {
-		background-image: url("../image/lobster_small.png");
-		background-repeat: no-repeat;
-		width: 48px;
-        height: 48px;
-		
-     }
-
+/*Header*/
 	a.nav-link{
 		font-size: .8em;
 	}
 
-	#menu {
-        background-image: none;
-        margin: 0px;
-        height: 0px;
-    }
+	#logo-id {
+		background-image: url("../image/lobster_small.png");
+		width: 48px;
+      height: 48px;
+		
+   }
+    
+/*Header ends*/
+/*body*/
+   .jumbotron {
+	   background-image: url("../image/restaurant_s.jpg");
+	   background-repeat: no-repeat;
+	   background-position: center;
+	   width: 100%;
+	   height: 432px;
+	}
 
-    #about {
-        background-image: none;
-        margin: 0px;
-        height: 0px;
-    }
+   .container {
+      max-width: 100%;
+   }
 
-    #contact {
-        background-image: none;
-        margin: 0px;
-        height: 0px;
-    }
-
-    #text-right { 
-       text-align: right;
+/*bodyend*/
 }
+
+@media (max-width: 575px) {
+/*Header*/
+	a.nav-link{
+		font-size: .8em;
+	}
+
+	#logo-id {
+		background-image: url("../image/lobster_small.png");
+		width: 48px;
+      height: 48px;
+	}
+
+    
+/*Header ends*/
+    
+   #tile-menu , #tile-specials, #tile-map, #map {
+      width: 100%;
+      height: 180px;
+      margin-bottom: 15px;
+   }
+
 }
-@media (max-width: 767.98px) { ... }
-
-@media (max-width: 991.98px) { ... }
-
-@media (max-width: 1199.98px) { ... }
