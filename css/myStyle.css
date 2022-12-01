@@ -336,11 +336,6 @@ img {
       margin-top: 30px;
    }
 /*single category*/
-   img {
-     width: 250px;
-     height: auto;
-   }
-
    .menu-item-img {
      position: relative;
    }
