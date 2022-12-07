@@ -12,6 +12,9 @@ body {
 	background-color: #ffa69e;
 	font-family: 'Open Sans', sans-serif;	
 }
+.loader{
+  width: 50px;
+}
 
 h1 {
 	font-family: 'Anton', sans-serif;
@@ -227,7 +230,17 @@ img {
    .bg-light {
       height: 160px;
    }
-/**/
+/*menu category*/
+   .row-for-category {
+      overflow: hidden ;
+   }
+   .tile-category img {
+      width: 277px;
+   }
+
+  .tile-category span{
+      width: 120%;
+   } 
 }
 
 /********** Medium devices only **********/
