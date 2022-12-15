@@ -8,17 +8,35 @@
 *{
 	border-box: box-sizing;
 }
-body {
-	background-color: #ffa69e;
-	font-family: 'Open Sans', sans-serif;	
+.bg-light {
+	background-color: white !important;
 }
+
+.link-dark {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}
+
+.link-dark:hover {
+  font-size: 25px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  height: 300px;
+}
+
 .loader{
   width: 50px;
 }
 
-h1 {
+.title {
 	font-family: 'Anton', sans-serif;
-	color: #ff7e6b;
+  color: white;
+	color: #61122f;
 	margin: 10px 0px 10px 0px;
 }
 
@@ -29,43 +47,18 @@ h2 {
 } 
 
 /*Header*/
+.bg-light {
+  height: 160px;
+}
+
 #logo-id {
 	background-image: url("../image/lobster.png");
 	width: 64px;
 	height: 64px;
 }
 
-div #menu {
-   background-image: url("../image/menu.png");
-   background-repeat: no-repeat;
-   width: 30px;
-   height: 24px;
-   margin: 10px 10px 1px 20px;
-   float: right;
-}
-
-div #about {
-   background-image: url("../image/info.png");
-   background-repeat: no-repeat;
-   width: 24px;
-   height: 24px;
-   margin: 10px 10px 1px 20px;
-   float: right;
-
-}
-
-div #contact {
-   background-image: url("../image/contact.png");
-   background-repeat: no-repeat;
-   width: 24px;
-   height: 24px;
-   margin: 10px 10px 1px 32px;
-   float: right;
-}
-
-
-#text-right { 
-   text-align: right;
+#text-right {
+   text-align: center;
 }
 
 /*main*/
@@ -190,7 +183,7 @@ div .menu-item-img span {
    border-radius: 10px;
    background-color: #32373b;
    text-align: center;
-   width: 30px;
+   width: 40px;
 }
 img {
    width: 100%;
@@ -227,9 +220,7 @@ img {
       width: 100%;
       height: 700px;
     }
-   .bg-light {
-      height: 160px;
-   }
+
 /*menu category*/
    .row-for-category {
       overflow: hidden ;
@@ -255,9 +246,7 @@ img {
       height: 558px;
    }
 
-   .bg-light {
-      height: 160px;
-   }
+
 /**/
 
 }
@@ -285,16 +274,21 @@ img {
 
 
 /*Header*/
-	a.nav-link{
-		font-size: .8em;
-	}
-
 	#logo-id {
 		background-image: url("../image/lobster_small.png");
 		width: 48px;
-      height: 48px;
-		
-   }
+    height: 48px;
+  }
+
+  .link-dark {
+  font-size: 17px;
+  }
+
+  .link-dark:hover {
+    font-size: 15px;
+  }
+
+
 
 /*main*/
    .jumbotron {

@@ -11,6 +11,7 @@ var aboutHtml = "snippets/about-snippet.html";
 var menuItemsJson = "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/";
 var menuItemsTitleHtml = "snippets/menu-items-title-snippet.html";
 var menuItemHtml = "snippets/menu-item-snippet.html";
+var aboutHtml = "snippets/about-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -47,6 +48,17 @@ $ajaxUtils.sendGetRequest(
   },
   false);
 });
+
+ado.loadMenuAbout = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    aboutHtml,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
 
 // Load the menu categories view
 ado.loadMenuCategories = function () {
