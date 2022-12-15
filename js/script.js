@@ -5,7 +5,7 @@ $(function () {
   $(".navbar-toggler").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 768) {
-      $(".navbar-collapse").collapse("hide");
+      $("#navbarNav").collapse("hide");
     }
   });
 
@@ -15,7 +15,7 @@ $(function () {
   // which is set up above will not be called.
   // Refer to issue #28 in the repo.
   // Solution: force focus on the element that the click event fired on
-  $("#navbarToggle").click(function (event) {
+  $(".navbar-toggler").click(function (event) {
     $(event.target).focus();
   });
 });
