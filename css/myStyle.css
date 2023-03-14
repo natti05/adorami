@@ -26,10 +26,6 @@ body {
   height: 300px;
 }
 
-.loader{
-  width: 100px;
-}
-
 .title {
 	font-family: 'Anton', sans-serif;
   color: white;

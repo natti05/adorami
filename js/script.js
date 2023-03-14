@@ -20,8 +20,8 @@ var targetElem = document.querySelector(selector);
 
 // Show loading icon inside element identified by 'selector'.
 var showLoading = function (selector) {
-  var html = "<div class='text-center'>";
-  html += "<img src='image/loading.gif' class='loader' ></div>";
+  var html = "<div class= text-center>";
+  html += "Loading...</div>";
   insertHtml(selector, html);
 };
 
